@@ -23,7 +23,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src"
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx src --ignore-pattern src/serviceWorker.ts",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
